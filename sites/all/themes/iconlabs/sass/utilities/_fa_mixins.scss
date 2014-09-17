@@ -1,0 +1,18 @@
+@import "../libraries/fontawesome/mixins";
+@import "../libraries/fontawesome/variables";
+
+// Mixins
+// --------------------------
+
+@mixin icon($icon, $size: auto, $margin-right: auto, $margin-left: auto, $color: auto, $top: auto, $shadow: none, $float: none) {
+  @include fa-icon;
+  content: $icon;
+  @if $size != auto    { font-size: $size; }
+  @if $margin-right != auto  { margin-right: $margin-right; }
+  @if $margin-left != auto { margin-left: $margin-left; }
+  @if $color != auto   { color: $color; }
+  @if $top != auto     { position: relative; top: $top; }
+  @if $shadow != none { text-shadow: $shadow; }
+  @if $float != none  { float: $float; }
+}
+

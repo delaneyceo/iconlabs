@@ -1,0 +1,12 @@
+.node--featured-content--featured-slideshow {
+  min-height: 500px;
+  @include background-size(cover);
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @include breakpoint($bp-sfmenu-is-expanded) {
+    .l-container {
+      padding-top: $navbar-height;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+From 07dc0238aabba5aac0d70f3ec37efd1790a4a72e Mon Sep 17 00:00:00 2001
+From: Brandon Neil <brandon-neil@uiowa.edu>
+Date: Tue, 2 Sep 2014 16:55:11 -0500
+Subject: [PATCH] #2331593 - test for Modernizr.mq
+
+---
+ sfsmallscreen.js | 6 +++---
+ sftouchscreen.js | 6 +++---
+ 2 files changed, 6 insertions(+), 6 deletions(-)
+
+diff --git a/sfsmallscreen.js b/sfsmallscreen.js
+index dfe69e3..0ad0b0d 100644
+--- a/sfsmallscreen.js
++++ b/sfsmallscreen.js
+@@ -287,14 +287,14 @@
+         var breakpoint = (options.breakpointUnit == 'em') ? (options.breakpoint * parseFloat($('body').css('font-size'))) : options.breakpoint,
+         windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+         timer;
+-        if ((typeof Modernizr != 'undefined' && Modernizr.mq('(max-width:' + (breakpoint - 1) + 'px)')) || (typeof Modernizr === 'undefined' && windowWidth < breakpoint)){
++        if ((typeof Modernizr.mq === 'function' && Modernizr.mq('(max-width:' + (breakpoint - 1) + 'px)')) || (typeof Modernizr.mq === 'undefined' && windowWidth < breakpoint)){
+           convert(menu);
+         }
+         $(window).resize(function(){
+           clearTimeout(timer);
+           timer = setTimeout(function(){
+             var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+-            if ((typeof Modernizr != 'undefined' && Modernizr.mq('(max-width:' + (breakpoint - 1) + 'px)')) || (typeof Modernizr === 'undefined' && windowWidth < breakpoint)){
++            if ((typeof Modernizr.mq === 'function' && Modernizr.mq('(max-width:' + (breakpoint - 1) + 'px)')) || (typeof Modernizr.mq === 'undefined' && windowWidth < breakpoint)){
+               convert(menu);
+             }
+             else {
+@@ -317,4 +317,4 @@
+     }
+     return this;
+   }
+-})(jQuery);
+\ No newline at end of file
++})(jQuery);
+diff --git a/sftouchscreen.js b/sftouchscreen.js
+index c886b1c..b9affc2 100644
+--- a/sftouchscreen.js
++++ b/sftouchscreen.js
+@@ -89,14 +89,14 @@
+         var breakpoint = (options.breakpointUnit == 'em') ? (options.breakpoint * parseFloat($('body').css('font-size'))) : options.breakpoint,
+         windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+         timer;
+-        if ((typeof Modernizr != 'undefined' && Modernizr.mq('(max-width:' + (breakpoint - 1) + 'px)')) || (typeof Modernizr === 'undefined' && windowWidth < breakpoint)){
++        if ((typeof Modernizr.mq === 'function' && Modernizr.mq('(max-width:' + (breakpoint - 1) + 'px)')) || (typeof Modernizr.mq === 'undefined' && windowWidth < breakpoint)){
+           activate(menu);
+         }
+         $(window).resize(function(){
+           clearTimeout(timer);
+           timer = setTimeout(function(){
+             var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+-            if ((typeof Modernizr != 'undefined' && Modernizr.mq('(max-width:' + (breakpoint - 1) + 'px)')) || (typeof Modernizr === 'undefined' && windowWidth < breakpoint)){
++            if ((typeof Modernizr.mq === 'function' && Modernizr.mq('(max-width:' + (breakpoint - 1) + 'px)')) || (typeof Modernizr.mq === 'undefined' && windowWidth < breakpoint)){
+               activate(menu);
+             }
+           }, 50);
+@@ -116,4 +116,4 @@
+     }
+     return this;
+   }
+-})(jQuery);
+\ No newline at end of file
++})(jQuery);
+-- 
+1.8.4.2
+

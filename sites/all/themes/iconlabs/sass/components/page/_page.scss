@@ -1,0 +1,27 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8em;
+  font-family: $base-font-stack;
+  color: $base-font-color;
+}
+
+.l-container {
+  max-width: $page-max-width;
+  margin: 0 auto;
+  padding: 0 $mobile-horz-padding;
+}
+
+.l-header {
+  background-color: #2E363A;
+  background-image: url('../images/patterns/vaio_hard_edge.png');
+  background-repeat: repeat;
+}
+
+.l-main {
+  @include breakpoint($bp-navbar-is-fixed) {
+    margin-top: $navbar-height;
+  }
+}

@@ -8,6 +8,7 @@ core = 7.x
 ; ========================================
 ; Stylesheets
 ; ========================================
+stylesheets[all][] = css/libraries/fontawesome/font-awesome.css
 stylesheets[all][] = css/iconlabs.normalize.css
 stylesheets[all][] = css/iconlabs.hacks.css
 stylesheets[all][] = css/iconlabs.styles.css
@@ -21,7 +22,6 @@ scripts[] = js/iconlabs.behaviors.js
 ; ========================================
 ; Regions
 ; ========================================
-regions[branding] = Branding
 regions[header] = Header
 regions[navigation] = Navigation
 regions[highlighted] = Highlighted

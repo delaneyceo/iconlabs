@@ -1,0 +1,39 @@
+.l-navbar {
+  background: rgba(0,0,0,.6);
+  @include font-smoothing;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  position: relative;
+  color: #fff;
+
+  @include breakpoint($bp-navbar-is-fixed) {
+    @include flexbox;
+    @include align-items(center);
+    @include justify-content(space-between);
+
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+
+    .toolbar & {
+      top: $toolbar-height;
+    }
+    .toolbar.toolbar-drawer & {
+      top: $toolbar-height + $toolbar-drawer-height;
+    }
+  }
+}
+
+.l-region--navigation {
+  @include pie-clearfix;
+}
+
+.l-branding {
+  padding-left: 1em;
+  @include inline-block;
+}
+
+.site-logo {
+  display: block;
+}
