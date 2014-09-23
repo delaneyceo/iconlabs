@@ -77,37 +77,26 @@
  * @see template_preprocess_node()
  * @see template_process()
  */
-
 ?>
 <article<?php print $attributes; ?> style="background-image: url(<?php print $variables['img_path']; ?>)">
-<div class="l-container">
-  <?php if (!empty($title_prefix) || !empty($title_suffix) || !$page): ?>
-    <header>
-      <?php print render($title_prefix); ?>
-      <?php if (!$page): ?>
-        <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>" rel="bookmark"><?php print $title; ?></a></h2>
+  <div class="dark-grid-overlay"></div>
+  <div class="l-container">
+
+    <?php if (isset($variables['link_path'])): ?>
+      <a href="<?php print $variables['link_path']; ?>">
+    <?php endif; ?>
+
+    <div class="featured-content-caption">
+      <h2<?php print $title_attributes; ?>><?php print $title; ?></h2>
+      <?php if (isset($content['field_caption'])): ?>
+        </br>
+        <?php print render($content['field_caption']); ?>
       <?php endif; ?>
-      <?php print render($title_suffix); ?>
-    </header>
-  <?php endif; ?>
+    </div>
 
-  <?php if ($display_submitted): ?>
-    <footer class="node__submitted">
-      <?php print $user_picture; ?>
-      <p class="submitted"><?php print $submitted; ?></p>
-    </footer>
-  <?php endif; ?>
+    <?php if (isset($variables['link_path'])): ?>
+      </a>
+    <?php endif; ?>
 
-  <div<?php print $content_attributes; ?>>
-    <?php
-      // We hide the comments and links now so that we can render them later.
-      hide($content['comments']);
-      hide($content['links']);
-      print render($content);
-    ?>
   </div>
-
-  <?php print render($content['links']); ?>
-  <?php print render($content['comments']); ?>
-</div>
 </article>

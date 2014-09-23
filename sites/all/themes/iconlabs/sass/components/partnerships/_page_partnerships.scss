@@ -1,0 +1,13 @@
+.page-partnerships {
+  .view-display-id-partners_listing {
+    .view-content {
+      @include flexbox;
+      @include flex-wrap(wrap);
+    }
+
+    .views-row {
+      @include flex(1 1 300px);
+      margin: 30px;
+    }
+  }
+}

@@ -1,12 +1,79 @@
 .node--featured-content--featured-slideshow {
-  min-height: 500px;
+  height: 200px;
   @include background-size(cover);
   background-repeat: no-repeat;
   background-position: center center;
+  position: relative;
 
+  .dark-grid-overlay {
+    background-color: rgba(#95866A, .45);
+    @include box-shadow(0px -25px 40px -8px rgba(0,0,0,.5) inset);
+  }
+
+  a {
+    display: block;
+  }
+
+  .field--name-field-caption {
+    display: none;
+  }
+
+  h2 {
+    color: #fff;
+    @include font-size(4);
+    line-height: normal;
+
+    // Mobile only treatment
+    @include breakpoint(0 $bp-sfmenu-is-expanded - 1px) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      margin-bottom: 0;
+      padding: 10px;
+      @include font-size(2);
+    }
+  }
+
+  // Global breakpoint for featured-slider
   @include breakpoint($bp-sfmenu-is-expanded) {
+    min-height: 500px;
+
     .l-container {
-      padding-top: $navbar-height;
+      position: relative;
+      top: $navbar-height;
+      height: 500px - $navbar-height;
+
+      .flexbox & {
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(center);
+      }
+    }
+
+    .featured-content-caption {
+      text-align: center;
+      width: 100%;
+    }
+
+    h2,
+    .field--name-field-caption {
+      margin: 0 auto;
+      padding: 10px;
+      @include inline-block;
+      @include text-shadow(1px 1px 2px rgba(0,0,0,.2));
+    }
+
+    h2 {
+      max-width: 90%;
+      margin-bottom: 10px;
+    }
+
+    .field--name-field-caption {
+      max-width: 80%;
+      color: #fff;
+      font-weight: 300;
+      @include font-size(2.4);
     }
   }
 }

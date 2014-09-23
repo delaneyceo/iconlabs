@@ -18,10 +18,17 @@ body {
   background-color: #2E363A;
   background-image: url('../images/patterns/vaio_hard_edge.png');
   background-repeat: repeat;
+
+  .l-main-header {
+    @include breakpoint($bp-navbar-is-fixed) {
+      padding-top: $navbar-height;
+    }
+  }
 }
 
 .l-main {
+  padding: 2em 0;
   @include breakpoint($bp-navbar-is-fixed) {
-    margin-top: $navbar-height;
+    //margin-top: $navbar-height;
   }
 }
