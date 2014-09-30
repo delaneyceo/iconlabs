@@ -159,6 +159,13 @@ body { font-size: 1.8em; font-family: "Source Sans Pro", sans-serif; color: #444
 
 .dark-grid-overlay { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-image: url("../images/patterns/dark-grid.png"); background-repeat: repeat; }
 
+.node--article--teaser { margin-bottom: 1em; padding-bottom: 1em; border-bottom: 3px solid #eee; }
+.node--article--teaser .node-readmore a { display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; padding: 10px; background: #4B77C3; color: #fff; font-size: 14px; font-size: 1.4rem; font-weight: bold; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.node--article--teaser img { width: 100%; max-height: 200px; }
+
+.node--blog--teaser { margin-bottom: 1em; padding-bottom: 1em; border-bottom: 3px solid #eee; }
+.node--blog--teaser .node-readmore a { display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; padding: 10px; background: #4B77C3; color: #fff; font-size: 14px; font-size: 1.4rem; font-weight: bold; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
 .node--featured-content--featured-slideshow { height: 200px; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; background-repeat: no-repeat; background-position: center center; position: relative; }
 .node--featured-content--featured-slideshow .dark-grid-overlay { background-color: rgba(149, 134, 106, 0.45); -moz-box-shadow: 0px -25px 40px -8px rgba(0, 0, 0, 0.5) inset; -webkit-box-shadow: 0px -25px 40px -8px rgba(0, 0, 0, 0.5) inset; box-shadow: 0px -25px 40px -8px rgba(0, 0, 0, 0.5) inset; }
 .node--featured-content--featured-slideshow a { display: block; }

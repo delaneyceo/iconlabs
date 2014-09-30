@@ -134,3 +134,22 @@
   }
 }
 
+@mixin teaser-base {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 3px solid #eee;
+
+  .node-readmore a {
+    @include btn;
+  }
+}
+
+@mixin btn {
+  @include inline-block;
+  padding: 10px;
+  background: $primary-link-color;
+  color: #fff;
+  @include font-size(1.4);
+  font-weight: bold;
+  @include font-smoothing;
+}

@@ -1,0 +1,6 @@
+/******************************************************************************* icarus.layout.scss  Styling of the "icarus" layout grids with Singularity. *****************************************************************************/
+.panel-display--icarus { *zoom: 1; }
+.panel-display--icarus:after { content: ""; display: table; clear: both; }
+
+@media (min-width: 768px) { .icarus-region--first { width: 48.64865%; float: left; margin-right: -100%; margin-left: 0; clear: none; }
+  .icarus-region--second { width: 48.64865%; float: right; margin-left: 0; margin-right: 0; clear: none; } }

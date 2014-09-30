@@ -1,0 +1,8 @@
+.node--article--teaser {
+  @include teaser-base;
+
+  img {
+    width: 100%;
+    max-height: 200px;
+  }
+}

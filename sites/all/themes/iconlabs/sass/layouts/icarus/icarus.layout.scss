@@ -1,7 +1,7 @@
 /*******************************************************************************
- * zero.layout.scss
+ * icarus.layout.scss
  *
- * Styling of the "Zero" layout
+ * Styling of the "icarus" layout
  * grids with Singularity.
  ******************************************************************************/
 @import "compass";
@@ -10,11 +10,21 @@
 @import "../../variables/breakpoints";
 
 
-.panel-display--zero {
+.panel-display--icarus {
   @include pie-clearfix;
-  @include add-grid(12);
+  @include add-grid(6 6);
   @include add-gutter(1/3);
+
 }
 
-.zero-region {}
+.icarus-region {}
 
+// Page reactions
+@include breakpoint($bp-tablet) {
+  .icarus-region--first {
+    @include grid-span(1, 1);
+  }
+  .icarus-region--second {
+    @include isolation-span(1, 2);
+  }
+}

@@ -9,7 +9,7 @@
 $plugin = array(
   'title' => t('Zero'),
   'icon' => 'preview.png',
-  'category' => t('Sitenow Standard content layouts'),
+  'category' => t('Iconlabs'),
   'theme' => 'zero',
   'css' => '../../../css/layouts/zero/zero.layout.css',
   'regions' => array(
