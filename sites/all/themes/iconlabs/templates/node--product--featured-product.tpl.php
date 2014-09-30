@@ -79,6 +79,7 @@
  */
 ?>
 <article<?php print $attributes; ?>>
+  <i class="fa <?php print $content['field_icon'][0]['#markup']; ?>"></i>
   <?php if (!empty($title_prefix) || !empty($title_suffix) || !$page): ?>
     <header>
       <?php print render($title_prefix); ?>
@@ -101,9 +102,10 @@
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
+      hide($content['field_icon']);
       print render($content);
     ?>
-    <a href="node/<?php print $variables['nid']; ?>">Learn More</a>
+    <a href="node/<?php print $variables['nid']; ?>" class="read-more">Learn More</a>
   </div>
 
   <?php print render($content['links']); ?>

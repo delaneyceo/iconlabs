@@ -1,0 +1,16 @@
+.view-display-id-products_product_type_tid {
+  .view-content {
+    .flexbox & {
+      @include flexbox;
+      @include flex-wrap(wrap);
+      margin: 0 -10px;
+    }
+
+    .views-row {
+      @include flex(1 1 300px);
+      margin: 0 10px 20px;
+      background: #f1f1f1;
+      padding: 2em;
+    }
+  }
+}

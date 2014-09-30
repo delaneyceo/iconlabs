@@ -17,7 +17,7 @@ stylesheets[all][] = css/iconlabs.no-query.css
 ; ========================================
 ; Scripts
 ; ========================================
-scripts[] = js/iconlabs.behaviors.js
+;scripts[] = js/iconlabs.behaviors.js
 
 ; ========================================
 ; Regions

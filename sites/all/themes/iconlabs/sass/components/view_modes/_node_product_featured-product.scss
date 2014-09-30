@@ -1,0 +1,9 @@
+.node--product--featured-product {
+  i {
+    @include font-size(4);
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

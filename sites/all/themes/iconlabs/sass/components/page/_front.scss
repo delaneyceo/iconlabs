@@ -12,14 +12,27 @@
   }
 
   .pane-products-products-eq-featured {
-    .view-content {
-      @include pie-clearfix;
-    }
-    .views-row {
-      @include float-span(4);
+    .flexbox & {
+      .view-content {
+        @include flexbox;
+        margin: 0 -10px;
+      }
 
-      &:nth-child(3n) {
-        @include float-span(4, 'last');
+      .views-row {
+        @include flex(1 1 300px);
+        margin: 0 10px;
+      }
+    }
+    .no-flexbox & {
+      .view-content {
+        @include pie-clearfix;
+      }
+      .views-row {
+        @include float-span(4);
+
+        &:nth-child(3n) {
+          @include float-span(4, 'last');
+        }
       }
     }
   }
@@ -30,5 +43,46 @@
 
   .pane-articles-articles-recent-news {
     @include grid-span(6, 7);
+  }
+}
+
+.front .pane-products-products-eq-featured {
+  text-align: center;
+
+  .pane-title {
+    @include element-invisible;
+  }
+  .read-more {
+    @include inline-block;
+    padding: 10px;
+    background: rgba(255,255,255,.2);
+    @include font-size(1.4);
+    font-weight: bold;
+  }
+  .views-row {
+    color: #fff;
+    padding: 1em;
+    @include text-shadow(1px 1px 0px rgba(0,0,0,.05));
+    @include font-smoothing;
+    h2 {
+    }
+    a {
+      color: #fff;
+    }
+  }
+  .field--name-body {
+    text-align: left;
+  }
+  .views-row-1 {
+    $color: #409DBF;
+    background: $color;
+  }
+  .views-row-2 {
+    $color: #C75C57;
+    background: $color;
+  }
+  .views-row-3 {
+    $color: #C1A844;
+    background: $color;
   }
 }
