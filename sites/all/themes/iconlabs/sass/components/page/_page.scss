@@ -9,9 +9,7 @@ body {
 }
 
 .l-container {
-  max-width: $page-max-width;
-  margin: 0 auto;
-  padding: 0 $mobile-horz-padding;
+  @include container;
 }
 
 .l-header {
@@ -19,16 +17,9 @@ body {
   background-image: url('../images/patterns/vaio_hard_edge.png');
   background-repeat: repeat;
 
-  .l-main-header {
-    @include breakpoint($bp-navbar-is-fixed) {
-      padding-top: $navbar-height;
-    }
-  }
+  .l-main-header {}
 }
 
 .l-main {
   padding: 2em 0;
-  @include breakpoint($bp-navbar-is-fixed) {
-    //margin-top: $navbar-height;
-  }
 }

@@ -77,7 +77,7 @@
     <div class="l-navbar">
       <div class="l-branding">
         <?php if ($logo): ?>
-          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img width="193px" height="70px" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img width="279px" height="70px" src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
         <?php endif; ?>
         <?php if ($site_slogan): ?>
           <div class="site-slogan"><?php print $site_slogan; ?></div>

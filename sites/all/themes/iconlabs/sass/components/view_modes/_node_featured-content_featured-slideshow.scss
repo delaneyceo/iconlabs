@@ -6,8 +6,17 @@
   position: relative;
 
   .dark-grid-overlay {
-    background-color: rgba(#95866A, .45);
+    background-color: rgba($color-blue, .3);
     @include box-shadow(0px -25px 40px -8px rgba(0,0,0,.5) inset);
+    @include opacity(.5);
+  }
+
+  .caption-wrapper {
+    position: relative;
+    @include background-image(linear-gradient(to right, $color-blue, transparent));
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
 
   a {
@@ -22,6 +31,7 @@
     color: #fff;
     @include font-size(4);
     line-height: normal;
+    margin-bottom: 0;
 
     // Mobile only treatment
     @include breakpoint(0 $bp-sfmenu-is-expanded - 1px) {
@@ -39,38 +49,26 @@
   @include breakpoint($bp-sfmenu-is-expanded) {
     min-height: 500px;
 
-    .l-container {
-      position: relative;
-      top: $navbar-height;
-      height: 500px - $navbar-height;
-
-      .flexbox & {
-        @include flexbox;
-        @include align-items(center);
-        @include justify-content(center);
-      }
-    }
+    @include flexbox;
+    @include align-items(center);
 
     .featured-content-caption {
-      text-align: center;
-      width: 100%;
+      @include container;
     }
 
     h2,
     .field--name-field-caption {
       margin: 0 auto;
-      padding: 10px;
       @include inline-block;
       @include text-shadow(1px 1px 2px rgba(0,0,0,.2));
+      max-width: 70%;
     }
 
     h2 {
-      max-width: 90%;
-      margin-bottom: 10px;
+      margin-bottom: .3em;
     }
 
     .field--name-field-caption {
-      max-width: 80%;
       color: #fff;
       font-weight: 300;
       @include font-size(2.4);

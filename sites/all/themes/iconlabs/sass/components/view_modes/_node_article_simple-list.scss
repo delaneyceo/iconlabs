@@ -1,0 +1,14 @@
+.node--article--simple-list {
+  h3 {
+    font-weight: normal;
+    @include font-size($base-font-size);
+    font-family: $base-font-stack;
+
+    a {
+      display: block;
+      border-bottom: 1px dotted #eee;
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+    }
+  }
+}
