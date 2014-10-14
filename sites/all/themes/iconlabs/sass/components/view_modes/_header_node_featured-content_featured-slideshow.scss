@@ -1,0 +1,79 @@
+.l-region--header {
+  .node--featured-content--featured-slideshow {
+    height: 200px;
+    @include background-size(cover);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+
+    .dark-grid-overlay {
+      background-color: rgba($color-blue, .3);
+      @include box-shadow(0px -25px 40px -8px rgba(0,0,0,.5) inset);
+      @include opacity(.5);
+    }
+
+    .caption-wrapper {
+      position: relative;
+      @include background-image(linear-gradient(to right, $color-blue, transparent));
+      width: 100%;
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+
+    a {
+      display: block;
+    }
+
+    .field--name-field-caption {
+      display: none;
+    }
+
+    h2 {
+      color: #fff;
+      @include font-size(4);
+      line-height: normal;
+      margin-bottom: 0;
+
+      // Mobile only treatment
+      @include breakpoint(0 $bp-sfmenu-is-expanded - 1px) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        margin-bottom: 0;
+        padding: 10px;
+        @include font-size(2);
+      }
+    }
+
+    // Global breakpoint for featured-slider
+    @include breakpoint($bp-sfmenu-is-expanded) {
+      min-height: 500px;
+
+      @include flexbox;
+      @include align-items(center);
+
+      .featured-content-caption {
+        @include container;
+      }
+
+      h2,
+      .field--name-field-caption {
+        margin: 0 auto;
+        @include inline-block;
+        @include text-shadow(1px 1px 2px rgba(0,0,0,.2));
+        max-width: 70%;
+      }
+
+      h2 {
+        margin-bottom: .3em;
+      }
+
+      .field--name-field-caption {
+        color: #fff;
+        font-weight: 300;
+        @include font-size(2.4);
+      }
+    }
+  }
+}

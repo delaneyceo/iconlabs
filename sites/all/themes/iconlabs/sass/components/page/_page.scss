@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-family: $base-font-stack;
   color: $base-font-color;
 }
@@ -13,11 +13,26 @@ body {
 }
 
 .l-header {
-  background-color: #2E363A;
-  background-image: url('../images/patterns/vaio_hard_edge.png');
-  background-repeat: repeat;
 
-  .l-main-header {}
+  .l-main-header {
+    background-color: $color-gold;
+    padding: 1.3em 0;
+    @include font-smoothing;
+    color: #fff;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  .page-title {
+    margin-bottom: 0;
+  }
+
+  .breadcrumb {
+    font-weight: bold;
+    @include font-size(1.4);
+  }
 }
 
 .l-main {

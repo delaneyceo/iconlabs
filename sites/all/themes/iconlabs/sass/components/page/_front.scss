@@ -9,8 +9,6 @@ $bp-float-articles: 700px;
   .l-container {
     @include add-grid(12);
     @include add-gutter(1/2);
-    // @include sgs-change("debug", true);
-    // @include background-grid;
     @include pie-clearfix;
   }
 
