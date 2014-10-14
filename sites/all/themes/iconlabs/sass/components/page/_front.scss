@@ -14,10 +14,6 @@ $bp-float-articles: 700px;
 
   .pane-solutions-solutions-homepage {
 
-    @include breakpoint($bp-float-awards) {
-      @include grid-span(10, 1);
-    }
-
     @include breakpoint($bp-float-solutions) {
       .view-content {
         @include flexbox;
@@ -65,13 +61,6 @@ $bp-float-articles: 700px;
       max-width: 200px;
       margin: 0 1em 1em;
       @include inline-block;
-    }
-
-    @include breakpoint($bp-float-awards) {
-      @include grid-span(2, 11);
-      .views-row {
-        margin: 0 0 1em;
-      }
     }
   }
 

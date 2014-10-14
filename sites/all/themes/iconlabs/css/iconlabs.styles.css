@@ -110,7 +110,6 @@ a { text-decoration: none; color: #113A6C; }
 .front .panel-pane { margin-bottom: 2em; }
 .front .l-container { *zoom: 1; }
 .front .l-container:after { content: ""; display: table; clear: both; }
-@media (min-width: 1024px) { .front .pane-solutions-solutions-homepage { width: 82.85714%; float: left; margin-right: -100%; margin-left: 0; clear: none; } }
 @media (min-width: 850px) { .front .pane-solutions-solutions-homepage .view-content { display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; }
   .front .pane-solutions-solutions-homepage .views-row { -webkit-box-flex: 1; -webkit-flex: 1 1 200px; -moz-box-flex: 1; -moz-flex: 1 1 200px; -ms-flex: 1 1 200px; flex: 1 1 200px; } }
 .front .pane-solutions-solutions-homepage .pane-title { border: 0; height: 1px; overflow: hidden; padding: 0; position: absolute !important; width: 1px; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px); }
@@ -121,8 +120,6 @@ a { text-decoration: none; color: #113A6C; }
 .front .pane-awards-awards-homepage { text-align: center; }
 .front .pane-awards-awards-homepage .pane-title { border: 0; height: 1px; overflow: hidden; padding: 0; position: absolute !important; width: 1px; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px); }
 .front .pane-awards-awards-homepage .views-row { display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; max-width: 200px; margin: 0 1em 1em; display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; }
-@media (min-width: 1024px) { .front .pane-awards-awards-homepage { width: 14.28571%; float: right; margin-left: 0; margin-right: 0; clear: none; }
-  .front .pane-awards-awards-homepage .views-row { margin: 0 0 1em; } }
 @media (min-width: 700px) { .front .pane-articles-articles-media-list { width: 48.57143%; float: left; margin-right: -100%; margin-left: 0; clear: both; } }
 @media (min-width: 700px) { .front .pane-articles-articles-news-list { width: 48.57143%; float: right; margin-left: 0; margin-right: 0; clear: none; } }
 
