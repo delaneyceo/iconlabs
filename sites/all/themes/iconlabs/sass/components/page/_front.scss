@@ -35,6 +35,7 @@ $bp-float-articles: 700px;
 
     h2 {
       margin-bottom: 0;
+      @include element-invisible;
 
       a {
         background: $primary-link-color;
@@ -51,6 +52,7 @@ $bp-float-articles: 700px;
 
   .pane-awards-awards-homepage {
     text-align: center;
+    clear: both;
 
     .pane-title {
       @include element-invisible;
@@ -61,6 +63,11 @@ $bp-float-articles: 700px;
       max-width: 200px;
       margin: 0 1em 1em;
       @include inline-block;
+    }
+
+    img {
+      max-height: 100px;
+      width: auto;
     }
   }
 
