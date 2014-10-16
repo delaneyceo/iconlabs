@@ -116,7 +116,6 @@ a { text-decoration: none; color: #113A6C; }
 .front .pane-solutions-solutions-homepage h2 a { background: #113A6C; padding: 10px; color: #fff; display: block; }
 .front .pane-solutions-solutions-homepage .taxonomy-term__content { padding: 1em; }
 .front .pane-awards-awards-homepage { text-align: center; clear: both; }
-.front .pane-awards-awards-homepage .pane-title { border: 0; height: 1px; overflow: hidden; padding: 0; position: absolute !important; width: 1px; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px); }
 .front .pane-awards-awards-homepage .views-row { display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; max-width: 200px; margin: 0 1em 1em; display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; }
 .front .pane-awards-awards-homepage img { max-height: 100px; width: auto; }
 

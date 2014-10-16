@@ -54,10 +54,6 @@ $bp-float-articles: 700px;
     text-align: center;
     clear: both;
 
-    .pane-title {
-      @include element-invisible;
-    }
-
     .views-row {
       @include inline-block;
       max-width: 200px;
