@@ -112,7 +112,6 @@ a { text-decoration: none; color: #113A6C; }
 .front .l-container:after { content: ""; display: table; clear: both; }
 @media (min-width: 850px) { .front .pane-solutions-solutions-homepage .view-content { display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; }
   .front .pane-solutions-solutions-homepage .views-row { -webkit-box-flex: 1; -webkit-flex: 1 1 200px; -moz-box-flex: 1; -moz-flex: 1 1 200px; -ms-flex: 1 1 200px; flex: 1 1 200px; } }
-.front .pane-solutions-solutions-homepage .pane-title { border: 0; height: 1px; overflow: hidden; padding: 0; position: absolute !important; width: 1px; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px); }
 .front .pane-solutions-solutions-homepage .views-row { margin-right: 1em; background: #f5f5f5; }
 .front .pane-solutions-solutions-homepage h2 { margin-bottom: 0; border: 0; height: 1px; overflow: hidden; padding: 0; position: absolute !important; width: 1px; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px); }
 .front .pane-solutions-solutions-homepage h2 a { background: #113A6C; padding: 10px; color: #fff; display: block; }

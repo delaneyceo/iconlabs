@@ -24,10 +24,6 @@ $bp-float-articles: 700px;
       }
     }
 
-    .pane-title {
-      @include element-invisible;
-    }
-
     .views-row {
       margin-right: 1em;
       background: #f5f5f5;
