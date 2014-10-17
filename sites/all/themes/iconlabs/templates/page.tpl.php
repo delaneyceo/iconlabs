@@ -121,5 +121,6 @@
 
   <footer class="l-footer" role="contentinfo"><div class="l-container">
     <?php print render($page['footer']); ?>
+    &copy; 2014 Icon Labs
   </div></footer>
 </div>

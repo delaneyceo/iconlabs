@@ -148,7 +148,7 @@ a { text-decoration: none; color: #113A6C; }
 
 html { font-size: 62.5%; }
 
-body { font-size: 1.6em; font-family: "Source Sans Pro", sans-serif; color: #444; }
+body { font-size: 1.6em; font-family: "Source Sans Pro", sans-serif; color: #444; background-color: #222; }
 
 .l-container { max-width: 1200px; margin: 0 auto; padding: 0 1em; }
 
@@ -157,7 +157,10 @@ body { font-size: 1.6em; font-family: "Source Sans Pro", sans-serif; color: #444
 .l-header .page-title { margin-bottom: 0; }
 .l-header .breadcrumb { font-weight: bold; font-size: 14px; font-size: 1.4rem; }
 
-.l-main { padding: 2em 0; }
+.l-main { padding: 2em 0; background-color: #fff; }
+
+.l-footer { background-color: #222; padding: 2em 0; color: #fff; }
+.l-footer input { background-color: #333; border: none; }
 
 .page-partnerships .view-display-id-partners_listing .view-content { display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: wrap; -moz-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: -10px; }
 .page-partnerships .view-display-id-partners_listing .views-row { -webkit-box-flex: 1; -webkit-flex: 1 1 300px; -moz-box-flex: 1; -moz-flex: 1 1 300px; -ms-flex: 1 1 300px; flex: 1 1 300px; margin: 10px; border: 1px dotted #ccc; padding: 1em; }

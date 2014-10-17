@@ -6,6 +6,7 @@ body {
   font-size: 1.6em;
   font-family: $base-font-stack;
   color: $base-font-color;
+  background-color: #222;
 }
 
 .l-container {
@@ -37,4 +38,16 @@ body {
 
 .l-main {
   padding: 2em 0;
+  background-color: #fff;
+}
+
+.l-footer {
+  background-color: #222;
+  padding: 2em 0;
+  color: #fff;
+
+  input {
+    background-color: #333;
+    border: none;
+  }
 }
