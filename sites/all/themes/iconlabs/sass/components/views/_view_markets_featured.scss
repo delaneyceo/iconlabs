@@ -1,0 +1,42 @@
+.view-display-id-markets_featured {
+
+  h2 {
+    text-align: center;
+    @include font-size(2)
+  }
+
+  .taxonomy-term__content {
+    text-align: center;
+  }
+
+  .custom-stat-value {
+    @include font-size(9);
+    font-weight: 900;
+    letter-spacing: -1px;
+    margin-bottom: -20px;
+  }
+
+  .custom-stat-suffix {
+    @include font-size(4.5);
+    vertical-align: top;
+    position: relative;
+    top: 16px;
+  }
+
+  .custom-stat-label {
+    @include font-size(2.5);
+    font-weight: 700;
+  }
+
+  .custom-stat-description {}
+
+  .custom-stat-source {
+    font-style: italic;
+    margin-top: 10px;
+
+    &:before {
+      content:  "\2014";
+      margin-right: 5px;
+    }
+  }
+}
