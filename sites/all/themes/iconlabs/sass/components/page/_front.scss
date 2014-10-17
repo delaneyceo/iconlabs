@@ -28,8 +28,12 @@ $bp-float-articles: 700px;
       @include element-invisible;
     }
 
+    .view-content {
+      margin: -10px;
+    }
+
     .views-row {
-      margin-right: 1em;
+      margin: 10px;
       background: #f5f5f5;
     }
 
