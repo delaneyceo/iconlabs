@@ -3,11 +3,14 @@
     .view-content {
       @include flexbox;
       @include flex-wrap(wrap);
+      margin: -10px;
     }
 
     .views-row {
       @include flex(1 1 300px);
-      margin: 30px;
+      margin: 10px;
+      border: 1px dotted #ccc;
+      padding: 1em;
     }
   }
 }
