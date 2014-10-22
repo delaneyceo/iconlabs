@@ -183,7 +183,6 @@ body { font-size: 1.6em; font-family: "Source Sans Pro", sans-serif; color: #444
 
 .node--article--teaser { margin-bottom: 1em; padding-bottom: 1em; border-bottom: 3px solid #eee; }
 .node--article--teaser .node-readmore a { display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; padding: 10px; background: #4B77C3; color: #fff; font-size: 14px; font-size: 1.4rem; font-weight: bold; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-.node--article--teaser img { width: 100%; max-height: 200px; }
 
 .node--blog--teaser { margin-bottom: 1em; padding-bottom: 1em; border-bottom: 3px solid #eee; }
 .node--blog--teaser .node-readmore a { display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; padding: 10px; background: #4B77C3; color: #fff; font-size: 14px; font-size: 1.4rem; font-weight: bold; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
