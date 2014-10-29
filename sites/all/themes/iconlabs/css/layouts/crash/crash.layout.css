@@ -1,0 +1,6 @@
+/******************************************************************************* crash.layout.scss  Styling of the "crash" layout grids with Singularity. *****************************************************************************/
+.panel-display--crash { *zoom: 1; }
+.panel-display--crash:after { content: ""; display: table; clear: both; }
+
+@media (min-width: 768px) { .crash-region--first { width: 64.86486%; float: left; margin-right: -100%; margin-left: 0; clear: none; }
+  .crash-region--second { width: 32.43243%; float: right; margin-left: 0; margin-right: 0; clear: none; } }

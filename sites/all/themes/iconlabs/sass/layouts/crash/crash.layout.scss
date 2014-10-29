@@ -1,0 +1,30 @@
+/*******************************************************************************
+ * crash.layout.scss
+ *
+ * Styling of the "crash" layout
+ * grids with Singularity.
+ ******************************************************************************/
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+@import "../../variables/breakpoints";
+
+
+.panel-display--crash {
+  @include pie-clearfix;
+  @include add-grid(8 4);
+  @include add-gutter(1/3);
+
+}
+
+.crash-region {}
+
+// Page reactions
+@include breakpoint($bp-tablet) {
+  .crash-region--first {
+    @include grid-span(1, 1);
+  }
+  .crash-region--second {
+    @include isolation-span(1, 2);
+  }
+}

@@ -1,0 +1,46 @@
+.views-summary {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+    position: relative;
+    margin-bottom: .5em;
+    padding-bottom: .5em;
+    border-bottom: 1px dotted #eee;
+  }
+
+  a {
+    padding-right: 45px;
+  }
+
+  .summary-count {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -15px;
+    text-align: center;
+    line-height: normal;
+    @include font-size(1);
+    font-weight: 800;
+    padding: 5px 8px;
+    min-width: 20px;
+    background: rgba(0,0,0,.1);
+    color: #444;
+    @include border-radius(15px);
+    @include font-smoothing;
+  }
+
+  .has-filter {
+    .label {
+      display: none;
+    }
+
+    .active {
+      &:before {
+        @include icon($fa-var-times-circle);
+        margin-right: .4em;
+      }
+    }
+  }
+}
