@@ -197,6 +197,14 @@ body { font-size: 1.6em; font-family: "Source Sans Pro", sans-serif; color: #444
 .node--partner--teaser .field--name-field-image { text-align: center; }
 .node--partner--teaser .field--name-field-image img { max-height: 45px; }
 
+.node--person--person-listing { margin-bottom: 1em; padding-bottom: 1em; border-bottom: 3px solid #eee; *zoom: 1; }
+.node--person--person-listing .node-readmore a { display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; padding: 10px; background: #4B77C3; color: #fff; font-size: 14px; font-size: 1.4rem; font-weight: bold; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.node--person--person-listing:after { content: ""; display: table; clear: both; }
+.node--person--person-listing .field--type-image { margin: 0 auto 1em; text-align: center; line-height: 0; }
+.node--person--person-listing h2 { margin-bottom: 0; overflow: hidden; }
+.node--person--person-listing .field--name-field-person-title { font-style: italic; font-size: 18px; font-size: 1.8rem; margin-bottom: 1em; overflow: hidden; }
+.node--person--person-listing .field--name-body { overflow: hidden; }
+
 .view-display-id-markets_featured h2 { text-align: center; font-size: 20px; font-size: 2rem; }
 .view-display-id-markets_featured .taxonomy-term__content { text-align: center; }
 .view-display-id-markets_featured .custom-stat-value { font-size: 90px; font-size: 9rem; font-weight: 900; letter-spacing: -1px; margin-bottom: -20px; }

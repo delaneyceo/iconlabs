@@ -1,0 +1,31 @@
+.node--person--person-listing {
+  @include teaser-base;
+  @include pie-clearfix;
+
+  .field--type-image {
+    margin: 0 auto 1em;
+    text-align: center;
+    line-height: 0;
+
+    @include breakpoint(500px) {
+      float: left;
+      margin: 0 1em 0 0;
+    }
+  }
+
+  h2 {
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+
+  .field--name-field-person-title {
+    font-style: italic;
+    @include font-size(1.8);
+    margin-bottom: 1em;
+    overflow: hidden;
+  }
+
+  .field--name-body {
+    overflow: hidden;
+  }
+}
