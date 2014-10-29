@@ -39,6 +39,8 @@ a:hover, a:focus, a:active { color: #666666; }
 .views-summary .has-filter .label { display: none; }
 .views-summary .has-filter .active:before { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; content: ""; margin-right: .4em; }
 
+.view .more-link a { display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; padding: 10px; background: #4B77C3; color: #fff; font-size: 14px; font-size: 1.4rem; font-weight: bold; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
 .breadcrumb { margin: 0; padding: 0; }
 .breadcrumb li { list-style: none; display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; }
 
