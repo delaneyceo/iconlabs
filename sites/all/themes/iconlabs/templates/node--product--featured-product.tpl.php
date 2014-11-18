@@ -105,7 +105,7 @@
       hide($content['field_icon']);
       print render($content);
     ?>
-    <a href="node/<?php print $variables['nid']; ?>" class="read-more">Learn More</a>
+    <a href="<?php print $node_url; ?>" class="read-more">Learn More</a>
   </div>
 
   <?php print render($content['links']); ?>
