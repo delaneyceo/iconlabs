@@ -1,0 +1,6 @@
+name = Iconlabs development updates
+description = Simple module to track database changes in code
+core = 7.x
+package = Iconlabs
+version = 7.x-1.0
+project = iconlabs_updates
