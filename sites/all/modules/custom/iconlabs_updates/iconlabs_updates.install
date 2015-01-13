@@ -7,7 +7,7 @@
 /**
  * Update articles for post date functionality
  */
-function iconlabs_updates_update_7100() {
+function iconlabs_updates_update_7101() {
   // Enable modules
   $modules = array(
     'node_override_options',
