@@ -3,19 +3,12 @@
  * @file
  */
 
-
 /**
- * Update articles for post date functionality
+ * Implements hook_install.
  */
-function iconlabs_updates_update_7101() {
+function iconlabs_updates_install() {
   // Enable modules
-  $modules = array(
-    'node_override_options',
-    'form_overrides',
-    'date',
-    'date_popup',
-    'date_popup_authored',
-  );
+  $modules = array('override_node_options', 'form_overrides', 'date', 'date_popup', 'date_popup_authored');
   module_enable($modules);
 
   // Set Article authored on option for web masters
@@ -23,4 +16,8 @@ function iconlabs_updates_update_7101() {
   user_role_grant_permissions($web_master_role->rid, array(
     'override article authored on option'
   ));
+
+  drupal_static_reset('user_access');
+  drupal_static_reset('user_role_permissions');
 }
+
