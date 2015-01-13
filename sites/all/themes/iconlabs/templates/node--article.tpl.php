@@ -83,7 +83,7 @@
     <i class="fa fa-pencil-square"></i>
     <span class="label element-invisible">Published: </span>
     <span class="post-date-formatted">
-      <?php print gmdate("F n, Y", $created); ?>
+      <?php print date("F j, Y", $created); ?>
     </span>
   </div>
   <?php if (!empty($title_prefix) || !empty($title_suffix) || !$page): ?>
