@@ -187,6 +187,9 @@ body { font-size: 1.6em; font-family: "Source Sans Pro", sans-serif; color: #444
 .l-region--header .node--featured-content--featured-slideshow .field--name-field-caption { display: none; }
 .l-region--header .node--featured-content--featured-slideshow h2 { color: #fff; font-size: 40px; font-size: 4rem; line-height: normal; margin-bottom: 0; }
 
+.node--article .post-date { margin-bottom: 1em; font-size: 14px; font-size: 1.4rem; text-transform: uppercase; font-weight: bold; }
+.node--article .post-date i { margin-right: .2em; font-size: 25px; font-size: 2.5rem; color: #bbb; position: relative; top: 3px; }
+
 .node--article--simple-list h3 { font-weight: normal; font-size: 16px; font-size: 1.6rem; font-family: "Source Sans Pro", sans-serif; }
 .node--article--simple-list h3 a { display: block; border-bottom: 1px dotted #eee; padding-bottom: 5px; margin-bottom: 5px; }
 

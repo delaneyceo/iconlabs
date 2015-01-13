@@ -1,0 +1,6 @@
+name = Iconlabs form overrides
+description = General form overrides
+core = 7.x
+package = Iconlabs
+version = 7.x-1.0
+project = form_overrides
