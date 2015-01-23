@@ -1,0 +1,23 @@
+<?php
+/**
+ * @file
+ */
+
+/**
+ * Implements hook_install.
+ */
+function iconlabs_updates_install() {
+  // Enable modules
+  $modules = array('override_node_options', 'form_overrides', 'date', 'date_popup', 'date_popup_authored');
+  module_enable($modules);
+
+  // Set Article authored on option for web masters
+  $web_master_role = user_role_load_by_name('web master');
+  user_role_grant_permissions($web_master_role->rid, array(
+    'override article authored on option'
+  ));
+
+  drupal_static_reset('user_access');
+  drupal_static_reset('user_role_permissions');
+}
+

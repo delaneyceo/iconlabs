@@ -1,0 +1,18 @@
+<?php
+/**
+ * @file
+ * Form overrides
+ */
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function form_overrides_form_node_form_alter(&$form, $form_state) {
+
+  switch ($form['#bundle']) {
+    case 'article':
+      // Set default tab to scheduler.
+      $form['additional_settings']['#default_tab'] = 'edit-scheduler-settings';
+      break;
+  }
+}
