@@ -1,7 +1,7 @@
 .view-display-id-product_types_listing {
   .view-content {
     .flexbox & {
-      @include flexbox;
+      @include display-flex;
       @include flex-wrap(wrap);
       margin: 0 -10px;
     }

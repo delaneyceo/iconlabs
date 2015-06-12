@@ -9,14 +9,14 @@
   z-index: 9;
 
   @include breakpoint($bp-sfmenu-is-expanded) {
-    @include flexbox;
+    @include display-flex;
     @include align-items(center);
     @include justify-content(space-between);
   }
 }
 
 .l-region--navigation {
-  @include pie-clearfix;
+  @include clearfix;
 }
 
 .l-branding {
