@@ -1,7 +1,7 @@
 .page-partnerships {
   .view-display-id-partners_listing {
     .view-content {
-      @include flexbox;
+      @include display-flex;
       @include flex-wrap(wrap);
       margin: -10px;
     }

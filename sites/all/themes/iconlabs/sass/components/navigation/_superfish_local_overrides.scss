@@ -39,7 +39,7 @@
       @include icon($fa-var-plus-square);
       width: 100%;
       height: 100%;
-      @include flexbox;
+      @include display-flex;
       @include align-items(center);
       @include justify-content(center);
     }

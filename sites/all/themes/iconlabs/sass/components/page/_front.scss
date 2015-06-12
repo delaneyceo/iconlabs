@@ -16,7 +16,7 @@ $bp-float-articles: 700px;
 
     @include breakpoint($bp-float-solutions) {
       .view-content {
-        @include flexbox;
+        @include display-flex;
       }
 
       .views-row {
