@@ -4,6 +4,7 @@
  * Implements hook_preprocess_page().
  */
 function iconlabs_preprocess_page(&$variables) {
-  // You can use preprocess hooks to modify the variables before they are passed
-  // to the theme function or template file.
+  // Format a current timestamp with the year.
+  $year = format_date(time(), 'custom', 'Y');
+  $variables['year'] = $year;
 }
