@@ -72,13 +72,19 @@ $bp-float-articles: 700px;
 
   .pane-articles-articles-media-list {
     @include breakpoint($bp-float-articles) {
-      @include isolation-span(6, 1, 'both');
+      @include isolation-span(4, 1, 'both');
     }
   }
 
   .pane-articles-articles-news-list {
     @include breakpoint($bp-float-articles) {
-      @include grid-span(6, 7);
+      @include isolation-span(4, 5);
+    }
+  }
+
+  .pane-blogs-blog-simple-listing {
+    @include breakpoint($bp-float-articles) {
+      @include isolation-span(4, 9);
     }
   }
 }

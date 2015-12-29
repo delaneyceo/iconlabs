@@ -131,8 +131,9 @@ a:hover, a:focus, a:active { color: #666666; }
 .front .pane-awards-awards-homepage { text-align: center; clear: both; }
 .front .pane-awards-awards-homepage .views-row { display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; max-width: 200px; margin: 0 1em 1em; display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; }
 .front .pane-awards-awards-homepage img { max-height: 100px; width: auto; }
-@media (min-width: 700px) { .front .pane-articles-articles-media-list { width: 48.57143%; float: left; margin-right: -100%; margin-left: 0; clear: both; } }
-@media (min-width: 700px) { .front .pane-articles-articles-news-list { width: 48.57143%; float: right; margin-left: 0; margin-right: 0; clear: none; } }
+@media (min-width: 700px) { .front .pane-articles-articles-media-list { width: 31.42857%; float: left; margin-right: -100%; margin-left: 0; clear: both; } }
+@media (min-width: 700px) { .front .pane-articles-articles-news-list { width: 31.42857%; float: left; margin-right: -100%; margin-left: 34.28571%; clear: none; } }
+@media (min-width: 700px) { .front .pane-blogs-blog-simple-listing { width: 31.42857%; float: right; margin-left: 0; margin-right: 0; clear: none; } }
 
 .front .pane-products-products-eq-featured { text-align: center; }
 .front .pane-products-products-eq-featured .pane-title { border: 0; height: 1px; overflow: hidden; padding: 0; position: absolute !important; width: 1px; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px); }
@@ -198,9 +199,6 @@ body { font-size: 1.6em; font-family: "Source Sans Pro", sans-serif; color: #444
 .node--article .post-date { margin-bottom: 1em; font-size: 14px; font-size: 1.4rem; text-transform: uppercase; font-weight: bold; }
 .node--article .post-date i { margin-right: .2em; font-size: 25px; font-size: 2.5rem; color: #bbb; position: relative; top: 3px; }
 
-.node--article--simple-list h3 { font-weight: normal; font-size: 16px; font-size: 1.6rem; font-family: "Source Sans Pro", sans-serif; }
-.node--article--simple-list h3 a { display: block; border-bottom: 1px dotted #eee; padding-bottom: 5px; margin-bottom: 5px; }
-
 .node--article--teaser { margin-bottom: 1em; padding-bottom: 1em; border-bottom: 3px solid #eee; }
 .node--article--teaser .node-readmore a { display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; padding: 10px; background: #4B77C3; color: #fff; font-size: 14px; font-size: 1.4rem; font-weight: bold; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
@@ -231,6 +229,9 @@ body { font-size: 1.6em; font-family: "Source Sans Pro", sans-serif; color: #444
 .node--person--person-listing h2 { margin-bottom: 0; overflow: hidden; }
 .node--person--person-listing .field--name-field-person-title { font-style: italic; font-size: 18px; font-size: 1.8rem; margin-bottom: 1em; overflow: hidden; }
 .node--person--person-listing .field--name-body { overflow: hidden; }
+
+.node--simple-list h3 { font-weight: normal; font-size: 16px; font-size: 1.6rem; font-family: "Source Sans Pro", sans-serif; }
+.node--simple-list h3 a { display: block; border-bottom: 1px dotted #eee; padding-bottom: 5px; margin-bottom: 5px; }
 
 .taxonomy-term--product-family--product-family-listing { padding-bottom: 3em; margin-bottom: 3em; border-bottom: 4px solid #f5f5f5; overflow: hidden; *zoom: 1; }
 .taxonomy-term--product-family--product-family-listing ul { margin: 0; padding: 0; }

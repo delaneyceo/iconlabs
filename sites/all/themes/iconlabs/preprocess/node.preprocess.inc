@@ -4,6 +4,8 @@
  * Implements hook_preprocess_node().
  */
 function iconlabs_preprocess_node(&$variables) {
+  // Suggest a template for node--['view_mode'].
+  $variables['theme_hook_suggestions'][] = 'node__' . $variables['view_mode'];
 
   if ($variables['view_mode'] ==  'featured_slideshow') {
     // Get the image path and pass it to the view mode temlate file.
