@@ -154,6 +154,7 @@ body { font-size: 1.6em; font-family: "Source Sans Pro", sans-serif; color: #444
 
 .l-container { max-width: 1200px; margin: 0 auto; padding: 0 1em; }
 
+.l-header .l-branding { margin-right: 3em; }
 .l-header .l-main-header { background-color: #BE902C; padding: 1.3em 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color: #fff; }
 .l-header .l-main-header a { color: #fff; }
 .l-header .page-title { margin-bottom: 0; }
@@ -190,6 +191,11 @@ body { font-size: 1.6em; font-family: "Source Sans Pro", sans-serif; color: #444
 .node--article--teaser { margin-bottom: 1em; padding-bottom: 1em; border-bottom: 3px solid #eee; }
 .node--article--teaser .node-readmore a { display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; padding: 10px; background: #4B77C3; color: #fff; font-size: 14px; font-size: 1.4rem; font-weight: bold; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
+.node--blog--full .field--name-field-tags { margin-bottom: 1em; }
+.node--blog--full .field--name-field-tags .field__item { display: inline; }
+.node--blog--full .field--name-field-tags .field__item:after { content: ", "; }
+.node--blog--full .field--name-field-tags .field__item:after:last-child { content: ""; }
+
 .node--blog--teaser { margin-bottom: 1em; padding-bottom: 1em; border-bottom: 3px solid #eee; }
 .node--blog--teaser .node-readmore a { display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; padding: 10px; background: #4B77C3; color: #fff; font-size: 14px; font-size: 1.4rem; font-weight: bold; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
@@ -199,6 +205,8 @@ body { font-size: 1.6em; font-family: "Source Sans Pro", sans-serif; color: #444
 .node--featured-content--featured-slideshow a { display: block; }
 .node--featured-content--featured-slideshow .field--name-field-caption { display: none; }
 .node--featured-content--featured-slideshow h2 { color: #fff; font-size: 40px; font-size: 4rem; line-height: normal; margin-bottom: 0; }
+
+.node--full .rrssb-buttons { max-width: 400px; }
 
 .node--partner--teaser .field--name-field-image { text-align: center; }
 .node--partner--teaser .field--name-field-image img { max-height: 45px; width: auto; }
@@ -213,6 +221,8 @@ body { font-size: 1.6em; font-family: "Source Sans Pro", sans-serif; color: #444
 
 .node--simple-list h3 { font-weight: normal; font-size: 16px; font-size: 1.6rem; font-family: "Source Sans Pro", sans-serif; }
 .node--simple-list h3 a { display: block; border-bottom: 1px dotted #eee; padding-bottom: 5px; margin-bottom: 5px; }
+
+.node--teaser .rrssb-buttons { max-width: 200px; }
 
 .taxonomy-term--product-family--product-family-listing { padding-bottom: 3em; margin-bottom: 3em; border-bottom: 4px solid #f5f5f5; overflow: hidden; *zoom: 1; }
 .taxonomy-term--product-family--product-family-listing ul { margin: 0; padding: 0; }

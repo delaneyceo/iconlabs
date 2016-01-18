@@ -1,0 +1,17 @@
+.node--blog--full {
+  .field--name-field-tags {
+    margin-bottom:  1em;
+
+    .field__item {
+      display: inline;
+
+      &:after {
+        content: ", ";
+
+        &:last-child {
+          content: "";
+        }
+      }
+    }
+  }
+}
