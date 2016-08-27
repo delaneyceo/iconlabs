@@ -1,0 +1,16 @@
+.view-display-id-article_annoucnements_ticker {
+  font-size: 2rem;
+  font-weight: bold;
+
+  .ticker-label {
+    background: #333;
+    color: #fff;
+    padding: 0 0.5rem;
+    border-radius: 0.2rem;
+    font-size: 1.6rem;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    text-transform: uppercase;
+    margin-right: 1rem;
+  }
+}
