@@ -6,6 +6,6 @@
  * @ingroup themeable
  */
 ?>
-<div>
-  <a href="#" class="btn">Subscribe to our Newsletter</a>
+<div class="newsletter-btn">
+  <a href="#" class="btn">Subscribe</a>
 </div>
