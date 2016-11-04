@@ -17,7 +17,6 @@
 <div id="mc_embed_signup">
 <form action="//iconlabs.us13.list-manage.com/subscribe/post?u=2cb6a781ca5ff9d72dd3f33f8&amp;id=e35a1c152f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
-  <h2>Subscribe to our mailing list</h2>
 <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
 <div class="mc-field-group">
   <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
