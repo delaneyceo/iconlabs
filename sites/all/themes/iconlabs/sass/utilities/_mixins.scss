@@ -158,4 +158,11 @@
   @include font-size(1.4);
   font-weight: bold;
   @include font-smoothing;
+  @include transition(all 0.3s ease-in-out);
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background: lighten($primary-link-color, 10);
+  }
 }

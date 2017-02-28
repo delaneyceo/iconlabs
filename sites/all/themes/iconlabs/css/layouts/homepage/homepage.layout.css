@@ -1,0 +1,10 @@
+/******************************************************************************* homepage.layout.scss  Styling of the "homepage" layout grids with Singularity. *****************************************************************************/
+.panel-display--homepage { *zoom: 1; }
+.panel-display--homepage:after { content: ""; display: table; clear: both; }
+
+.homepage-region, .homepage { *zoom: 1; }
+.homepage-region:after, .homepage:after { content: ""; display: table; clear: both; }
+
+@media (min-width: 768px) { .homepage-region--first { width: 16.21622%; float: left; margin-right: -100%; margin-left: 0; clear: none; }
+  .homepage-region--second { width: 81.08108%; float: right; margin-left: 0; margin-right: 0; clear: none; }
+  .homepage-region--third { width: 100%; float: right; margin-left: 0; margin-right: 0; clear: none; } }

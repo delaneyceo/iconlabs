@@ -1,0 +1,17 @@
+.page-re-sellers {
+  .view-display-id-resellers_all {
+    .view-content {
+      @include display-flex;
+      @include flex-wrap(wrap);
+      margin: -10px;
+    }
+
+    .views-row {
+      @include flex(300px 1 1);
+      margin: 10px;
+      border: 1px dotted #ccc;
+      padding: 1em;
+      text-align: center;
+    }
+  }
+}

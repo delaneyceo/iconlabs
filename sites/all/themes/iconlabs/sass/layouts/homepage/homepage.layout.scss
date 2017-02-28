@@ -1,0 +1,36 @@
+/*******************************************************************************
+ * homepage.layout.scss
+ *
+ * Styling of the "homepage" layout
+ * grids with Singularity.
+ ******************************************************************************/
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+@import "../../variables/breakpoints";
+
+
+.panel-display--homepage {
+  @include pie-clearfix;
+  @include add-grid(2 10);
+  @include add-gutter(1/3);
+
+}
+
+.homepage-region,
+.homepage {
+  @include pie-clearfix;
+}
+
+// Page reactions
+@include breakpoint($bp-tablet) {
+  .homepage-region--first {
+    @include grid-span(1, 1);
+  }
+  .homepage-region--second {
+    @include isolation-span(1, 2);
+  }
+  .homepage-region--third {
+    @include isolation-span(2, 1);
+  }
+}

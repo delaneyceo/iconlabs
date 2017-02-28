@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * @file
+ * A block module for a TeachITS specific CSE Search.
+ */
+
+/**
+ * Implements hook_block_info().
+ */
+function custom_blocks_block_info() {
+  $blocks['newsletter_signup']['info']  = t('Newsletter Signup');
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function custom_blocks_block_view($delta = '') {
+  $block = array();
+  $base_path = $GLOBALS['base_path'];
+
+  switch ($delta) {
+    case 'newsletter_signup':
+      $block['content'] = theme("newsletter_signup");
+
+  }
+  return $block;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function custom_blocks_theme(){
+  $template_path = drupal_get_path('module', 'custom_blocks') . '/theme';
+  $themes = array(
+    'newsletter_signup' => array(
+      "path" => $template_path,
+      "template" => "newsletter_signup",
+    ),
+  );
+  return $themes;
+}
+

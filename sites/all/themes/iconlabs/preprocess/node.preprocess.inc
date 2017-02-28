@@ -20,4 +20,8 @@ function iconlabs_preprocess_node(&$variables) {
     }
     $variables['link_path'] = $link_path;
   }
+
+  if ($variables['type'] == 're_seller') {
+    hide($variables['content']['links']);
+  }
 }
