@@ -189,6 +189,9 @@ body { font-size: 1.6em; font-family: "Source Sans Pro", sans-serif; color: #444
 .flexbox .view-display-id-products_product_type_tid .view-content { display: -webkit-flex; display: flex; -webkit-flex-wrap: wrap; flex-wrap: wrap; margin: 0 -10px; }
 .view-display-id-products_product_type_tid .view-content .views-row { -webkit-flex: 1 1 300px; flex: 1 1 300px; margin: 0 10px 20px; background: #f1f1f1; padding: 2em; }
 
+.page-re-sellers .view-display-id-resellers_all .view-content { display: -webkit-flex; display: flex; -webkit-flex-wrap: wrap; flex-wrap: wrap; margin: -10px; }
+.page-re-sellers .view-display-id-resellers_all .views-row { -webkit-flex: 300px 1 1; flex: 300px 1 1; margin: 10px; border: 1px dotted #ccc; padding: 1em; text-align: center; }
+
 .dark-grid-overlay { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-image: url("../images/patterns/dark-grid.png"); background-repeat: repeat; }
 
 .l-region--header .node--featured-content--featured-slideshow { height: 200px; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; background-repeat: no-repeat; background-position: center center; position: relative; }
@@ -236,7 +239,7 @@ body { font-size: 1.6em; font-family: "Source Sans Pro", sans-serif; color: #444
 .node--full .rrssb-buttons { max-width: 400px; }
 
 .node--partner--teaser .field--name-field-image { text-align: center; }
-.node--partner--teaser .field--name-field-image img { max-height: 45px; width: auto; }
+.node--partner--teaser .field--name-field-image img { width: auto; }
 
 .node--person--person-listing { margin-bottom: 1em; padding-bottom: 1em; border-bottom: 3px solid #eee; *zoom: 1; }
 .node--person--person-listing .node-readmore a { display: inline-block; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline; padding: 10px; background: #4B77C3; color: #fff; font-size: 14px; font-size: 1.4rem; font-weight: bold; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
