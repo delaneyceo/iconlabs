@@ -1,0 +1,4 @@
+name: iconlabs
+recipe: drupal7
+config:
+  webroot: .
